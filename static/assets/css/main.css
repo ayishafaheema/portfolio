@@ -67,9 +67,9 @@ img { display: block; max-width: 100%; }
 .hero-footnote { display: flex; align-items: center; gap: 12px; margin-top: 35px; color: var(--subtle); font-family: var(--mono); font-size: 9px; letter-spacing: .08em; }
 .footnote-line { width: 25px; height: 1px; background: var(--accent-deep); }
 .hero-visual { position: relative; width: min(100%, 420px); justify-self: end; padding: 22px 24px 44px; }
-.portrait-frame { position: relative; z-index: 1; width: 100%; aspect-ratio: .82; overflow: hidden; border: 1px solid rgba(229, 194, 183, .25); background: #242126; box-shadow: 24px 24px 0 rgba(255,255,255,.025), 0 25px 80px rgba(0,0,0,.42); container-type: size; }
+.portrait-frame { position: relative; z-index: 1; width: 100%; aspect-ratio: .82; overflow: hidden; border: 1px solid rgba(229, 194, 183, .25); background: #242126; box-shadow: 24px 24px 0 rgba(255,255,255,.025), 0 25px 80px rgba(0,0,0,.42); }
 .portrait-frame::after { position: absolute; inset: 0; border: 8px solid rgba(9,9,11,.08); content: ""; pointer-events: none; }
-.portrait-frame img { position: absolute; top: 50%; left: 50%; width: 100cqh; height: 100cqw; max-width: none; object-fit: cover; transform: translate(-50%, -50%) rotate(-90deg); }
+.portrait-frame img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .portrait-index { position: absolute; z-index: 2; top: 14px; left: 15px; padding: 5px 8px; border: 1px solid rgba(255,255,255,.3); background: rgba(10,9,10,.42); color: #fff; font-family: var(--mono); font-size: 9px; letter-spacing: .08em; }
 .portrait-caption { position: relative; z-index: 1; display: flex; align-items: center; gap: 9px; margin-top: 15px; color: #b3adb0; font-family: var(--mono); font-size: 9px; letter-spacing: .1em; }
 .caption-dot { width: 5px; height: 5px; }
